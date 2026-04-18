@@ -1,0 +1,245 @@
+{
+  "groups": [
+    {
+      "name": "agent",
+      "type": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions"
+    }
+  ],
+  "properties": [
+    {
+      "name": "agent.agent-bin-url",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": ""
+    },
+    {
+      "name": "agent.agent-sh-url",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": ""
+    },
+    {
+      "name": "agent.application-group",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": "chaos-default-app-group"
+    },
+    {
+      "name": "agent.application-instance",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": "chaos-default-app"
+    },
+    {
+      "name": "agent.blade-tar-url",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": ""
+    },
+    {
+      "name": "agent.cert-url",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": ""
+    },
+    {
+      "name": "agent.chaosblade-version",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": ""
+    },
+    {
+      "name": "agent.cid",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": ""
+    },
+    {
+      "name": "agent.cluster-id",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": ""
+    },
+    {
+      "name": "agent.cluster-name",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": ""
+    },
+    {
+      "name": "agent.environment",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": "prod"
+    },
+    {
+      "name": "agent.external-ip-enable",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": false
+    },
+    {
+      "name": "agent.heartbeat-period",
+      "type": "java.time.Duration",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": "5s"
+    },
+    {
+      "name": "agent.host-name",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": ""
+    },
+    {
+      "name": "agent.install-operator",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": "linux"
+    },
+    {
+      "name": "agent.instance-id",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": ""
+    },
+    {
+      "name": "agent.ip",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": ""
+    },
+    {
+      "name": "agent.license",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": ""
+    },
+    {
+      "name": "agent.litmus-chaos-version",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": ""
+    },
+    {
+      "name": "agent.litmus-chart-url",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": ""
+    },
+    {
+      "name": "agent.local-ip",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": ""
+    },
+    {
+      "name": "agent.log-level",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": "info"
+    },
+    {
+      "name": "agent.log-max-file-count",
+      "type": "java.lang.Integer",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": 1
+    },
+    {
+      "name": "agent.log-max-file-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": 10
+    },
+    {
+      "name": "agent.log-output",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": "file"
+    },
+    {
+      "name": "agent.mode",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": "host"
+    },
+    {
+      "name": "agent.namespace",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": "default"
+    },
+    {
+      "name": "agent.pid",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": ""
+    },
+    {
+      "name": "agent.pod-metric-flag",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": false
+    },
+    {
+      "name": "agent.port",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": "19527"
+    },
+    {
+      "name": "agent.restricted-vpc",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": false
+    },
+    {
+      "name": "agent.startup-mode",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": "console"
+    },
+    {
+      "name": "agent.transport-endpoint",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": ""
+    },
+    {
+      "name": "agent.transport-secure",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": true
+    },
+    {
+      "name": "agent.transport-timeout",
+      "type": "java.time.Duration",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": "3s"
+    },
+    {
+      "name": "agent.uid",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": ""
+    },
+    {
+      "name": "agent.version",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": "1.1.0"
+    },
+    {
+      "name": "agent.vpc",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions"
+    },
+    {
+      "name": "agent.vpc-id",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.chaosblade.box.agent.bootstrap.config.AgentOptions",
+      "defaultValue": ""
+    }
+  ],
+  "hints": []
+}

@@ -1,0 +1,13 @@
+/Users/zhoufudun/IdeaProjects/chaosblade-box-agent/chaosblade-box-agent-java/chaosblade-box-agent-transport/src/main/java/com/alibaba/chaosblade/box/agent/transport/HttpTransportChannel.java
+/Users/zhoufudun/IdeaProjects/chaosblade-box-agent/chaosblade-box-agent-java/chaosblade-box-agent-transport/src/main/java/com/alibaba/chaosblade/box/agent/transport/InterceptorChain.java
+/Users/zhoufudun/IdeaProjects/chaosblade-box-agent/chaosblade-box-agent-java/chaosblade-box-agent-transport/src/main/java/com/alibaba/chaosblade/box/agent/transport/TransportChannel.java
+/Users/zhoufudun/IdeaProjects/chaosblade-box-agent/chaosblade-box-agent-java/chaosblade-box-agent-transport/src/main/java/com/alibaba/chaosblade/box/agent/transport/Response.java
+/Users/zhoufudun/IdeaProjects/chaosblade-box-agent/chaosblade-box-agent-java/chaosblade-box-agent-transport/src/main/java/com/alibaba/chaosblade/box/agent/transport/package-info.java
+/Users/zhoufudun/IdeaProjects/chaosblade-box-agent/chaosblade-box-agent-java/chaosblade-box-agent-transport/src/main/java/com/alibaba/chaosblade/box/agent/transport/TimestampInterceptor.java
+/Users/zhoufudun/IdeaProjects/chaosblade-box-agent/chaosblade-box-agent-java/chaosblade-box-agent-transport/src/main/java/com/alibaba/chaosblade/box/agent/transport/AuthInterceptor.java
+/Users/zhoufudun/IdeaProjects/chaosblade-box-agent/chaosblade-box-agent-java/chaosblade-box-agent-transport/src/main/java/com/alibaba/chaosblade/box/agent/transport/ErrorCodes.java
+/Users/zhoufudun/IdeaProjects/chaosblade-box-agent/chaosblade-box-agent-java/chaosblade-box-agent-transport/src/main/java/com/alibaba/chaosblade/box/agent/transport/Uri.java
+/Users/zhoufudun/IdeaProjects/chaosblade-box-agent/chaosblade-box-agent-java/chaosblade-box-agent-transport/src/main/java/com/alibaba/chaosblade/box/agent/transport/TransportUriMap.java
+/Users/zhoufudun/IdeaProjects/chaosblade-box-agent/chaosblade-box-agent-java/chaosblade-box-agent-transport/src/main/java/com/alibaba/chaosblade/box/agent/transport/RequestInterceptor.java
+/Users/zhoufudun/IdeaProjects/chaosblade-box-agent/chaosblade-box-agent-java/chaosblade-box-agent-transport/src/main/java/com/alibaba/chaosblade/box/agent/transport/TransportClient.java
+/Users/zhoufudun/IdeaProjects/chaosblade-box-agent/chaosblade-box-agent-java/chaosblade-box-agent-transport/src/main/java/com/alibaba/chaosblade/box/agent/transport/Request.java

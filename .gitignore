@@ -20,3 +20,4 @@ build/image_musl/agent
 build/agent
 build/*.tar.gz
 build/package
+chaosagent-*.tar.gz

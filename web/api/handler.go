@@ -50,7 +50,6 @@ func (handler *ServerRequestHandler) Handle(request string) (string, error) {
 	handleStartTime := time.Now()
 	logrus.Infof("[ServerRequestHandler] Handle() called at %v, request length: %d", handleStartTime, len(request))
 	var response *transport.Response
-	var allow bool
 	select {
 	case <-handler.Ctx.Done():
 		response = transport.ReturnFail(transport.HandlerClosed)
@@ -66,14 +65,17 @@ func (handler *ServerRequestHandler) Handle(request string) (string, error) {
 		decodeDuration := time.Since(decodeStartTime)
 		logrus.Infof("[ServerRequestHandler] Request decode completed, duration: %v, time since handle start: %v", decodeDuration, time.Since(handleStartTime))
 
-		//拦截器先拦截，允许之后再执行
-		if response, allow = handler.Interceptor.Handle(req); allow {
-			handlerStartTime := time.Now()
-			logrus.Infof("[ServerRequestHandler] Calling Handler.Handle() at %v, time since handle start: %v", handlerStartTime, time.Since(handleStartTime))
-			response = handler.Handler.Handle(req)
-			handlerDuration := time.Since(handlerStartTime)
-			logrus.Infof("[ServerRequestHandler] Handler.Handle completed, duration: %v, time since handle start: %v", handlerDuration, time.Since(handleStartTime))
-		}
+		// 【本 fork 定制】禁用 request 拦截器链（timestampInterceptor / authInterceptor）
+		// 官方 v1.1.1 (PR #23) 引入的拦截器要求 request 带 timestamp+sign，但 box SDK
+		// (chaosblade-box-agent-sdk RequestUtil) 里多个 createRequest 重载缺少 timestamp/sign，
+		// 导致 /ping、CPU/内存等实验请求全部 401 (invalid timestamp / missing sign)。
+		// 在不修改 box 的前提下，直接跳过拦截器，行为等价于 v1.1.0；PR #24 的 SIGFPE 修复完好保留。
+		// 前提：agent 端口 19527 已通过防火墙/网络策略限制为仅 box IP 可达。
+		handlerStartTime := time.Now()
+		logrus.Infof("[ServerRequestHandler] Calling Handler.Handle() at %v, time since handle start: %v", handlerStartTime, time.Since(handleStartTime))
+		response = handler.Handler.Handle(req)
+		handlerDuration := time.Since(handlerStartTime)
+		logrus.Infof("[ServerRequestHandler] Handler.Handle completed, duration: %v, time since handle start: %v", handlerDuration, time.Since(handleStartTime))
 	}
 	// encode
 	encodeStartTime := time.Now()
